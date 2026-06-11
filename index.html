@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Asesoría profesional sobre el consumo de energía en la Costa Atlántica y el resto de Colombia. Optimiza tu facturación eléctrica con Santos Dario Sanchez Villamil.">
+    <meta name="keywords" content="consumo de energía, costa atlántica, tarifas de energía Colombia, asesoría energética, reducir factura de luz, Santos Dario Sanchez Villamil">
+    <meta name="author" content="Santos Dario Sanchez Villamil">
+    <title>consumoEnergia | Asesoría en Consumo Eléctrico en Colombia</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Variables y Reseteo */
+        :root {
+            --primary-color: #0ea5e9;
+            --secondary-color: #0284c7;
+            --text-dark: #1e293b;
+            --text-light: #64748b;
+            --bg-light: #f8fafc;
+            --white: #ffffff;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+        body { color: var(--text-dark); background-color: var(--white); line-height: 1.6; }
+        a { text-decoration: none; color: inherit; }
+        ul { list-style: none; }
+
+        /* Navegación */
+        header { background: var(--white); box-shadow: 0 2px 10px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 100; }
+        .nav-container { max-width: 1200px; margin: 0 auto; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.5rem; font-weight: 700; color: var(--primary-color); }
+        .nav-links a { margin-left: 1.5rem; font-weight: 600; transition: color 0.3s; }
+        .nav-links a:hover { color: var(--primary-color); }
+
+        /* Hero Section */
+        .hero { background: linear-gradient(135deg, var(--bg-light) 0%, #e0f2fe 100%); padding: 5rem 2rem; text-align: center; }
+        .hero-container { max-width: 800px; margin: 0 auto; }
+        .hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem; color: #0f172a; }
+        .hero p { font-size: 1.125rem; color: var(--text-light); margin-bottom: 2rem; }
+        .cta-btn { display: inline-block; background-color: var(--primary-color); color: var(--white); padding: 1rem 2rem; border-radius: 8px; font-weight: 600; font-size: 1.125rem; transition: background 0.3s; border: none; cursor: pointer; }
+        .cta-btn:hover { background-color: var(--secondary-color); }
+
+        /* Secciones Generales */
+        .section { padding: 4rem 2rem; }
+        .container { max-width: 1200px; margin: 0 auto; }
+        .section-title { text-align: center; font-size: 2rem; margin-bottom: 3rem; color: #0f172a; }
+
+        /* Beneficios & Servicios (Grillas) */
+        .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+        .card { background: var(--white); padding: 2rem; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #e2e8f0; }
+        .card h3 { color: var(--primary-color); margin-bottom: 1rem; font-size: 1.25rem; }
+        
+        /* Prueba Social */
+        .testimonials { background-color: var(--bg-light); }
+        .testimonial-card { font-style: italic; color: var(--text-light); }
+        .testimonial-author { margin-top: 1rem; font-weight: 600; font-style: normal; color: var(--text-dark); display: block; }
+
+        /* Contacto e Información */
+        .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; }
+        .contact-info { background: var(--bg-light); padding: 2rem; border-radius: 12px; }
+        .contact-info p { margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+        .contact-form { display: flex; flex-direction: column; gap: 1rem; }
+        .contact-form input, .contact-form textarea { width: 100%; padding: 0.75rem; border: 1px solid #cbd5e1; border-radius: 6px; font-family: inherit; }
+        .contact-form textarea { resize: vertical; min-height: 120px; }
+
+        /* Footer */
+        footer { background: #0f172a; color: #94a3b8; padding: 3rem 2rem; text-align: center; }
+        footer .legal-links { margin-top: 1.5rem; display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; }
+        footer .legal-links a { text-decoration: underline; }
+        footer .legal-links a:hover { color: var(--white); }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links { display: none; } /* En móvil se puede agregar un menú hamburguesa si se desea expandir */
+            .contact-grid { grid-template-columns: 1fr; gap: 2rem; }
+            .hero h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <div class="logo">consumoEnergia</div>
+            <nav class="nav-links">
+                <a href="#beneficios">Beneficios</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-container">
+                <h1>Entiende y Optimiza tu Consumo de Energía en Colombia</h1>
+                <p>Asesoría especializada para analizar el consumo eléctrico en la Costa Atlántica y el resto del país. Te ayudamos a interpretar tus métricas sin falsas promesas.</p>
+                <a href="#contacto" class="cta-btn">Programa tu Asesoría Energética</a>
+            </div>
+        </section>
+
+        <section id="beneficios" class="section">
+            <div class="container">
+                <h2 class="section-title">¿Por qué solicitar nuestra asesoría?</h2>
+                <div class="grid-3">
+                    <div class="card">
+                        <h3>Análisis Claro y Realista</h3>
+                        <p>Desglosamos la información de tu medición eléctrica para que entiendas exactamente cómo se distribuye tu consumo diario.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Enfoque Regional</h3>
+                        <p>Comprendemos las particularidades climáticas y tarifarias de la Costa Atlántica frente a las dinámicas del interior del país.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Transparencia Total</h3>
+                        <p>No garantizamos ahorros mágicos. Proveemos información técnica y hábitos verificables para que tomes el control de tu energía.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="servicios" class="section" style="background-color: var(--bg-light);">
+            <div class="container">
+                <h2 class="section-title">Nuestra Propuesta de Valor</h2>
+                <div class="grid-3">
+                    <div class="card">
+                        <h3>Contexto Costa Atlántica</h3>
+                        <p>Evaluación de factores climáticos de alta demanda (refrigeración, aire acondicionado) y lectura de medidores en zonas de alta temperatura.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Resto de Colombia</h3>
+                        <p>Análisis de picos de consumo en pisos térmicos templados y fríos, evaluando calefacción y uso de electrodomésticos estándar.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Educación Continua</h3>
+                        <p>Sesiones informativas sobre normativas actuales, ciclos de facturación y buenas prácticas de eficiencia energética en el hogar o negocio.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="prueba-social" class="section">
+            <div class="container">
+                <h2 class="section-title">Experiencias Reales</h2>
+                <div class="grid-3">
+                    <div class="card testimonial-card">
+                        "La asesoría me permitió entender finalmente cómo se calcula mi facturación mensual y qué hábitos estaban generando picos de consumo."
+                        <span class="testimonial-author">- Cliente de Asesoría, 2023</span>
+                    </div>
+                    <div class="card testimonial-card">
+                        "Información clara, directa y sin promesas exageradas. Me sirvió para reorganizar el uso de los equipos en mi oficina."
+                        <span class="testimonial-author">- Usuario Comercial</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="section">
+            <div class="container">
+                <h2 class="section-title">Solicita Información</h2>
+                <div class="contact-grid">
+                    
+                    <div class="contact-info">
+                        <h3 style="margin-bottom: 1.5rem;">Datos de Contacto y Transparencia</h3>
+                        <p><strong>Representante:</strong> SANTOS DARIO SANCHEZ VILLAMIL</p>
+                        <p><strong>Dirección:</strong> Cra. 3ª #3-24 Chivata, Boyacá, Colombia</p>
+                        <p><strong>Teléfono:</strong> 3012552363</p>
+                        <p><strong>Correo:</strong> caharren@gmail.com</p>
+                        <p><strong>Horario de atención:</strong> Lunes a Domingo de 8:00 am a 5:00 pm</p>
+                        <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--text-light);">
+                            *Tus datos serán tratados conforme a nuestra política de privacidad, exclusivamente para responder a tu solicitud.
+                        </p>
+                    </div>
+
+                    <div>
+                        <form id="contactForm" class="contact-form">
+                            <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required>
+                            <input type="email" id="correo" name="correo" placeholder="Correo electrónico" required>
+                            <input type="tel" id="telefono" name="telefono" placeholder="Teléfono de contacto" required>
+                            <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos brevemente sobre tu consulta energética" required></textarea>
+                            <button type="submit" class="cta-btn">Enviar Solicitud</button>
+                            <div id="formStatus" style="display:none; margin-top:1rem; color: #10b981; font-weight: 600;"></div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 consumoEnergia - SANTOS DARIO SANCHEZ VILLAMIL. Todos los derechos reservados.</p>
+            <p style="margin-top: 0.5rem; font-size: 0.875rem;">Este sitio tiene fines informativos y de asesoría independiente.</p>
+            <div class="legal-links">
+                <a href="politica-de-privacidad.html">Política de Privacidad</a>
+                <a href="terminos-y-condiciones.html">Términos y Condiciones</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Aquí iría la lógica real de envío (ej. fetch a un backend o servicio como Formspree)
+            const statusDiv = document.getElementById('formStatus');
+            statusDiv.style.display = 'block';
+            statusDiv.textContent = '¡Gracias por tu interés! Hemos recibido tus datos y te contactaremos pronto.';
+            this.reset();
+            
+            // Ocultar mensaje después de unos segundos
+            setTimeout(() => {
+                statusDiv.style.display = 'none';
+            }, 5000);
+        });
+    </script>
+</body>
+</html>
